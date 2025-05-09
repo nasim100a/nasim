@@ -2,6 +2,86 @@
 <html>
   <!-- Mirrored from preview.colorlib.com/theme/Md Nasim Hossain Labib/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 12 Mar 2025 18:50:38 GMT -->
   <head>
+      <style>
+.education-section {
+  padding: 50px 20px;
+  background: linear-gradient(135deg, #f0f4ff, #e0f7fa);
+  text-align: center;
+}
+
+.education-section h2 {
+  font-size: 36px;
+  color: #003366;
+  margin-bottom: 40px;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 800px;
+  margin: auto;
+  position: relative;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background-color: #0077b5;
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.timeline-item .year {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+  background: #0077b5;
+  padding: 6px 14px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+.timeline-item .content h3 {
+  font-size: 22px;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+.timeline-item .content p {
+  font-size: 16px;
+  color: #444;
+}
+
+.timeline-item a {
+  margin-top: 8px;
+  display: inline-block;
+  color: #0077b5;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.timeline-item a:hover {
+  text-decoration: underline;
+}
+
+
+
+          </style>
   <style>  .contact-section {
   max-width: 600px;
   margin: 60px auto;
@@ -663,177 +743,50 @@ With relentless learning, strong problem-solving skills, and expertise in compet
                   <h2 class="colorlib-heading animate-box">Education</h2>
                 </div>
               </div>
-              <div class="row">
-                <div
-                  class="col-md-12 animate-box"
-                  data-animate-effect="fadeInLeft"
-                >
-                  <div class="fancy-collapse-panel">
-                    <div
-                      class="panel-group"
-                      id="accordion"
-                      role="tablist"
-                      aria-multiselectable="true"
-                    >
-                      <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="headingOne">
-                          <h4 class="panel-title">
-                            <a
-                              data-toggle="collapse"
-                              data-parent="#accordion"
-                              href="#collapseOne"
-                              aria-expanded="true"
-                              aria-controls="collapseOne"
-                              >DIPLOMA IN COMPUTER BASICS SKILLS 
-                            </a>
-                          </h4>
-                        </div>
-                        <div
-                          id="collapseOne"
-                          class="panel-collapse collapse in"
-                          role="tabpanel"
-                          aria-labelledby="headingOne"
-                        >
-                          <div class="panel-body">
-                            <div class="row">
-                              <div class="col-md-6">
-                                <p>
-                                  I have got A in this degree in 2024.
-                                </p>
-                              </div>
-                              <div class="col-md-6">
-                                <p>
-                                 
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="headingTwo">
-                          <h4 class="panel-title">
-                            <a
-                              class="collapsed"
-                              data-toggle="collapse"
-                              data-parent="#accordion"
-                              href="#collapseTwo"
-                              aria-expanded="false"
-                              aria-controls="collapseTwo"
-                              >HIGHER SECONDARY SCHOOL CERTIFICATE
-                            </a>
-                          </h4>
-                        </div>
-                        <div
-                          id="collapseTwo"
-                          class="panel-collapse collapse"
-                          role="tabpanel"
-                          aria-labelledby="headingTwo"
-                        >
-                          <div class="panel-body">
-                            <p>
-                             I have got 
-                              <strong>GPA 5.00</strong> in 2023.
-                              
-                              
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="headingThree">
-                          <h4 class="panel-title">
-                            <a
-                              class="collapsed"
-                              data-toggle="collapse"
-                              data-parent="#accordion"
-                              href="#collapseThree"
-                              aria-expanded="false"
-                              aria-controls="collapseThree"
-                              >SECONDARY SCHOOL CERTIFICATE
-                            </a>
-                          </h4>
-                        </div>
-                        <div
-                          id="collapseThree"
-                          class="panel-collapse collapse"
-                          role="tabpanel"
-                          aria-labelledby="headingThree"
-                        >
-                          <div class="panel-body">
-                            <p>
-                             I have got 
-                              <strong>GPA 5.00</strong> in 2021.
-                              
-                            </p>
-                          </div>
-                        </div>
-                      </div>
+             <!-- Education Section -->
+<section class="education-section" id="education">
+  <h2>My Education</h2>
+  <div class="timeline">
 
-                      <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="headingFour">
-                          <h4 class="panel-title">
-                            <a
-                              class="collapsed"
-                              data-toggle="collapse"
-                              data-parent="#accordion"
-                              href="#collapseFour"
-                              aria-expanded="false"
-                              aria-controls="collapseFour"
-                              >JUNIOR SCHOOL CERTIFICATE
-                            </a>
-                          </h4>
-                        </div>
-                        <div
-                          id="collapseFour"
-                          class="panel-collapse collapse"
-                          role="tabpanel"
-                          aria-labelledby="headingFour"
-                        >
-                          <div class="panel-body">
-                            <p>
-                             I have got
-                              <strong>GPA 5.00</strong> in 2018.
-                              
-                            </p>
-                          </div>
-                        </div>
-                      </div>
+    <div class="timeline-item">
+      <div class="year">2015</div>
+      <div class="content">
+        <h3>PSC (Primary School Certificate)</h3>
+        <p>GPA: 5.00 out of 5.00</p>
+        <a href="https://drive.google.com/your-psc-certificate" target="_blank">📄 View Certificate</a>
+      </div>
+    </div>
 
-                      <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="headingFive">
-                          <h4 class="panel-title">
-                            <a
-                              class="collapsed"
-                              data-toggle="collapse"
-                              data-parent="#accordion"
-                              href="#collapseFive"
-                              aria-expanded="false"
-                              aria-controls="collapseFive"
-                              >PRIMARY SCHOOL CERTIFICATE 
-                            </a>
-                          </h4>
-                        </div>
-                        <div
-                          id="collapseFive"
-                          class="panel-collapse collapse"
-                          role="tabpanel"
-                          aria-labelledby="headingFive"
-                        >
-                          <div class="panel-body">
-                            <p>
-                              I have got 
-                              <strong>GPA 5.00</strong> in 2015.
-                             
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+    <div class="timeline-item">
+      <div class="year">2018</div>
+      <div class="content">
+        <h3>JSC (Junior School Certificate)</h3>
+        <p>GPA: 5.00 out of 5.00</p>
+        <a href="https://drive.google.com/your-jsc-certificate" target="_blank">📄 View Certificate</a>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="year">2021</div>
+      <div class="content">
+        <h3>SSC (Secondary School Certificate)</h3>
+        <p>GPA: 5.00 out of 5.00</p>
+        <a href="https://drive.google.com/your-ssc-certificate" target="_blank">📄 View Certificate</a>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="year">2023</div>
+      <div class="content">
+        <h3>HSC (Higher Secondary Certificate)</h3>
+        <p>GPA: 5.00 out of 5.00</p>
+        <a href="https://drive.google.com/your-hsc-certificate" target="_blank">📄 View Certificate</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
           </section>
 
           <!-- <section class="colorlib-experience" data-section="experience">
