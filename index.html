@@ -205,7 +205,97 @@
     <![endif]-->
   </head>
   <body>
+<!-- Floating Chat Button -->
+<div id="chat-button" onclick="toggleChat()">
+    💬 Let's Chat
+</div>
 
+<!-- Hidden Chat Box -->
+<div id="chat-box">
+    <h3>Send me a message</h3>
+    <form id="chat-form" action="mailto:info.nasimlabib@gmail.com" method="POST" enctype="text/plain">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+    </form>
+</div>
+
+<style>
+/* Floating Button */
+#chat-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    z-index: 1000;
+    font-weight: bold;
+}
+
+/* Chat Box Styling */
+#chat-box {
+    display: none;
+    position: fixed;
+    bottom: 70px;
+    right: 20px;
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    z-index: 1000;
+}
+
+#chat-box h3 {
+    margin-top: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+#chat-box input, #chat-box textarea {
+    width: 100%;
+    margin: 8px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#chat-box button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#chat-box button:hover {
+    background-color: #45a049;
+}
+</style>
+
+
+
+
+    <script>
+function toggleChat() {
+    var chatBox = document.getElementById('chat-box');
+    if (chatBox.style.display === "none" || chatBox.style.display === "") {
+        chatBox.style.display = "block";
+    } else {
+        chatBox.style.display = "none";
+    }
+}
+</script>
+
+
+
+    
     <div id="colorlib-page">
       <div class="container-wrap">
         <a
@@ -574,17 +664,7 @@ With relentless learning, strong problem-solving skills, and expertise in compet
              
 
 
-           <!-- Contact Section -->
-<section id="contact" class="contact-section">
-<button onclick="openChat()">Let's Chat</button>
-<script>
-function openChat() {
-    var userMessage = prompt("Write your message:");
-    if (userMessage) {
-        window.location.href = "mailto:info.nasimlabib@gmail.com?subject=New Message&body=" + encodeURIComponent(userMessage);
-    }
-}
-</script>
+
 
 
   
