@@ -576,7 +576,18 @@ With relentless learning, strong problem-solving skills, and expertise in compet
 
            <!-- Contact Section -->
 <section id="contact" class="contact-section">
+<button onclick="openChat()">Let's Chat</button>
+<script>
+function openChat() {
+    var userMessage = prompt("Write your message:");
+    if (userMessage) {
+        window.location.href = "mailto:info.nasimlabib@gmail.com?subject=New Message&body=" + encodeURIComponent(userMessage);
+    }
+}
+</script>
 
+
+  
   <h2>Contact Me</h2>
   <form action="mailto:info.nasimlabib@gmail.com" method="POST" enctype="text/plain">
     <input type="text" name="name" placeholder="Your Name" required>
